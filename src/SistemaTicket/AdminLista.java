@@ -6,6 +6,11 @@ import java.util.ArrayList;
 public class AdminLista {
     private ArrayList<AdminTicket> ticket;
 
+    public AdminLista(ArrayList<AdminTicket> ticket) {
+        this.ticket = ticket;
+    }
+
+    
     public ArrayList<AdminTicket> getTicket() {
         return ticket;
     }
@@ -14,15 +19,15 @@ public class AdminLista {
         this.ticket = ticket;
     }  
     
-    public void addTicket(){
-        
+    public void addTicket(AdminTicket ticket){
+        this.ticket.add(ticket);
     }
     
-    public void deleteTicket(){
-        
+    public void deleteTicket(AdminTicket ticket){
+        this.ticket.remove(ticket);
     }
     
-    public void searchTicket(){
-        
+    public void searchTicket(AdminTicket ticket){
+       
     }
 }

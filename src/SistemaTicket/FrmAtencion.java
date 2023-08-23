@@ -26,17 +26,44 @@ public class FrmAtencion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        btnSiguiente = new javax.swing.JButton();
+        lblMostrar = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        jLabel1.setText("SIGUIENTE TICKET");
+
+        btnSiguiente.setText("NEXT");
+
+        lblMostrar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnSiguiente)
+                        .addGap(15, 15, 15))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(lblMostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(lblMostrar, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                .addGap(12, 12, 12)
+                .addComponent(btnSiguiente)
+                .addGap(15, 15, 15))
         );
 
         pack();
@@ -79,5 +106,8 @@ public class FrmAtencion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSiguiente;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblMostrar;
     // End of variables declaration//GEN-END:variables
 }

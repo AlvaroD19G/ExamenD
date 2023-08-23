@@ -25,5 +25,4 @@ public class AdminTicket {
     public void setClase(String clase) {
         this.clase = clase;
     }
-  
 }

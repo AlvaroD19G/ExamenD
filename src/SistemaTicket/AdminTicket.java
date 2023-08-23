@@ -2,7 +2,7 @@ package SistemaTicket;
 
 
 public class AdminTicket {
-    private int num;
+    private int    num;
     private String clase;
 
     public AdminTicket(int num, String clase) {
